@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Laura's Personal Portfolio</title>
-    <link rel="next" href="second.html">
+    <link rel="icon" href="sakura.png">
 </head>
 
 <body>
@@ -64,26 +64,38 @@
         <br>
 
         <aside>
-            <canvas id="canvas"></canvas>
             <pre>
             |\      _,,,---,,_
-            ZZZzz /,`.-'`'    -.  ;-;;,_
+            ZZZzz /,`.-'`'    -.  ;-;;,_   
                 |,4-  ) )-,_. ,\ (  `'-'
                 '---''(_/--'  `-'\_)  
-            </pre>
+            </pre> <canvas id="canvas"></canvas>
+            <br>
+            <button onclick="showContent()">Show hidden content (scroll to bottom of page)</button>
 
+            <template>
+                <h2>You found the Secret Cat!</h2>
+                <img src="https://cdn.pixabay.com/photo/2019/05/08/21/21/cat-4189697__480.jpg" width="214" height="204"
+                    alt="sleeping cat">
+            </template>
 
-            <script> /* used with canvas tag */
+            <script> /* used with canvas & template tag */
                 var c = document.getElementById("canvas");
                 var ctx = c.getContext("2d");
-                ctx.fillStyle = "blue";
-                ctx.fillRect(20, 20, 75, 50);
+                ctx.beginPath();
+                ctx.arc(60, 40, 30, 0, 2 * Math.PI);
+                ctx.stroke();
+
+                function showContent() {
+                    var temp = document.getElementsByTagName("template")[0];
+                    var clon = temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                }
             </script>
         </aside>
 
-        </section>
 
-
+        <h1>Now, tell me about you!</h1>
         <form>
             <label>What's your favorite color?:</label>
             <select name="color" id="color">
@@ -96,23 +108,25 @@
                     <option value="navyblue">Navy Blue</option>
                 </optgroup>
             </select>
-            <br><br>
             <input type="submit" value="Submit">
         </form>
 
         <br>
+
         <form>
-            <label>Not on the list? Some more options:</label>
-            <input type="text" id="favColor" name="favColor" />
-            <datalist id="colors" for="favColor">
-                <option value="Yellow">Yellow</option>
-                <option value="Orange">Orange</option>
-                <option value="Red">Red</option>
-                <option value="Purple">Purple</option>
-                <option value="Pink">Pink</option>
+            <label for="colours">Not on the list? Here are some more options:</label>
+            <input list="colors" name="colors" id="colours" />
+            <datalist id="colors">
+                <option value="Orange">
+                <option value="Red">
+                <option value="Yellow">
+                <option value="Purple">
+                <option value="Pink">
             </datalist>
             <input type="submit">
         </form>
+
+        </details>
 
 
 
