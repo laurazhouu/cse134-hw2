@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Laura's Personal Portfolio</title>
-    <link rel="next" href="second.html" />
+    <link rel="next" href="second.html">
 </head>
 
 <body>
@@ -18,13 +18,108 @@
     <hr>
 
     <main>
+        <div>
+            <h1>Let's Connect</h1>
+            <h2>Email</h2>
+            <a href="mailto:lazhou@ucsd.edu">lazhou@ucsd.edu</a>
+
+            <h2>Linkedin</h2>
+            <a href="https://www.linkedin.com/in/laura-zhou-180
+            ">Linkedin
+            </a>
+
+            <h2>Github</h2>
+            <a href="https://github.com/laurazhouu">Github</a>
+        </div>
+
+        <br>
         <section>
+            <fieldset>
+                <legend>Contact Form:</legend>
+
+                <form>
+                    <br>
+                    <label for="Name">Name:
+                        <input type="text" name="Name" id="name" />
+                    </label>
+
+                    <br>
+                    <label for="Email">Email:
+                        <input type="text" name="Email" id="email" />
+                    </label>
+
+                    <br>
+                    <label for="Message">Message:</label>
+                    <br>
+                    <textarea rows="4" cols="50">Type Message</textarea>
+
+
+                    <br>
+                    <button type="submit"><code>send()</code></button>
+
+                </form>
+            </fieldset>
+        </section>
+
+        <br>
+
+        <aside>
+            <canvas id="canvas"></canvas>
+            <pre>
+            |\      _,,,---,,_
+            ZZZzz /,`.-'`'    -.  ;-;;,_
+                |,4-  ) )-,_. ,\ (  `'-'
+                '---''(_/--'  `-'\_)  
+            </pre>
+
+
+            <script> /* used with canvas tag */
+                var c = document.getElementById("canvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "blue";
+                ctx.fillRect(20, 20, 75, 50);
+            </script>
+        </aside>
 
         </section>
+
+
+        <form>
+            <label>What's your favorite color?:</label>
+            <select name="color" id="color">
+                <optgroup label="Green">
+                    <option value="sagegreen">Sage Green</option>
+                    <option value="neongreen">Neon Green</option>
+                </optgroup>
+                <optgroup label="Blue">
+                    <option value="skyblue">Sky Blue</option>
+                    <option value="navyblue">Navy Blue</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <form>
+            <label>Not on the list? Some more options:</label>
+            <input type="text" id="favColor" name="favColor" />
+            <datalist id="colors" for="favColor">
+                <option value="Yellow">Yellow</option>
+                <option value="Orange">Orange</option>
+                <option value="Red">Red</option>
+                <option value="Purple">Purple</option>
+                <option value="Pink">Pink</option>
+            </datalist>
+            <input type="submit">
+        </form>
+
+
+
     </main>
 
     <footer>
-        <br/>
+        <br>
         <hr>
         <h1>Laura Zhou
             <svg width="30" height="30">
