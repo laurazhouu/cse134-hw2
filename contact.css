@@ -5,3 +5,29 @@ body {
     color: var(--primary-color);
 }
 
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.contact-item {
+    width: 50%;
+    margin: min(2vw, 28px);
+    padding: min(5vw, 70px) min(2vw, 28px);
+}
+
+.contact {
+    background-color: var(--secondary-color);
+    border-radius: min(1vw, 14px);
+}
+
+.contact-item a {
+    color: white;
+}
+
+
+.contact-item a:visited {
+    color: white;
+}

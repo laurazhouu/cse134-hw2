@@ -5,3 +5,31 @@
     color: var(--secondary-color);
     text-align: center;
 }
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: 1px solid black;
+    padding: 0 min(5vw, 70px);
+
+}
+
+.about-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-club-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: min(5vw, 70px);
+}
+
+.about-club-item {
+    box-sizing: border-box;
+    margin: min(5vw, 70px);
+    width: 50%;
+}
