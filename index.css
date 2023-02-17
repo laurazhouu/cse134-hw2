@@ -168,7 +168,57 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    #home-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
+        align-items: normal;
+        width: 100%;
 
+    }
+
+    #home-button {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #home-section-item {
+        padding-bottom: 5vw;
+    }
+
+    #home-section-item3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-bottom: 5vw;
+    }
+
+    #home-section-item3 h1 {
+        border-radius: 5vw;
+    }
+
+    .home-btn {
+        width: 40vw;
+        height: 15vw;
+        border-radius: 5vw;
+        margin-top: 5vw;
+    }
+
+    .home-btn2 {
+        width: 40vw;
+        height: 15vw;
+        border-radius: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .home-grid2 {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
 
 @media only screen and (max-width: 768px) {}

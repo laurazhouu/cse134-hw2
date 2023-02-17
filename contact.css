@@ -31,3 +31,33 @@ body {
 .contact-item a:visited {
     color: white;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-item {
+        width: auto;
+        border-radius: 5vw;
+        padding: 5vw;
+
+    }
+
+    .contactform {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    fieldset {
+        min-width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}

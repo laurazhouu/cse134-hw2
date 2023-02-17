@@ -74,6 +74,11 @@ nav {
     margin-bottom: 2vw;
 }
 
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
 nav div a {
     margin: 0 1vw;
     transition: 0.2s;
@@ -171,4 +176,16 @@ svg {
 
 #checkbox:checked+main footer ul li a svg {
     color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #checkbox {
+        left: 10px;
+        text-align: center;
+    }
 }
