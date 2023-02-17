@@ -188,4 +188,18 @@ svg {
         left: 10px;
         text-align: center;
     }
+
+    p {
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
 }
