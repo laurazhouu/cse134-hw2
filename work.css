@@ -6,6 +6,7 @@
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin: 5vw;
 }
 
 #work-item1 {
