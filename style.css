@@ -12,7 +12,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    max-width: 1201px;
+    max-width: 1400px;
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font);
@@ -38,7 +38,12 @@ h1 {
     font-family: var(--secondary-font);
     letter-spacing: 0.05rem;
     font-weight: 800;
+    font-size: 3em;
+}
+
+h2 {
     font-size: 2em;
+    font-family: var(--secondary-font);
 }
 
 p {
@@ -66,21 +71,22 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2vw;
 }
 
-nav section a {
+nav div a {
     margin: 0 1vw;
     transition: 0.2s;
 }
 
-nav section a:hover {
+nav div a:hover {
     font-size: 1.05rem;
     /* transform: scale(1.1); */
     cursor: pointer;
     text-shadow: 0px 0px 5px white;
 }
 
-nav section a:visited {
+nav div a:visited {
     color: var(--primary-color);
 }
 
@@ -116,12 +122,12 @@ hr {
     color: white;
 }
 
-#checkbox:checked~main section a {
+#checkbox:checked~main div a {
     color: white;
 }
 
 
-#checkbox:checked~main section a:visited {
+#checkbox:checked~main div a:visited {
     color: white;
 }
 
@@ -136,7 +142,7 @@ hr {
     width: 40px;
     height: 20px;
     background: var(--third-color);
-    border-radius: 22px;
+    border-radius: min(1vw, 14px);
     cursor: pointer;
     outline: none;
 }
@@ -147,7 +153,7 @@ hr {
     width: 20px;
     height: 15px;
     background-color: white;
-    border-radius: 22px;
+    border-radius: min(1vw, 14px);
     top: 2.5px;
     left: 2px;
     cursor: pointer;

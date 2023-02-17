@@ -1,1 +1,7 @@
 @import url("style.css");
+
+.about-heading {
+    margin: 2vw;
+    color: var(--secondary-color);
+    text-align: center;
+}

@@ -13,7 +13,7 @@
     <main class="container">
         <nav>
             <header>
-                <h1><b>2023</b></h1>
+                <h2><b>2023</b></h2>
             </header>
             <div style="display:inline-block">
                 <a href="index.html">HOME</a> |
@@ -25,21 +25,32 @@
         <hr>
 
         <section>
-            <h1><b>Work History</b></h1>
+            <h1 class="about-heading">WORK HISTORY</h1>
             <i>
                 <h2>Apple</h2>
                 <h3>Incoming SWE Intern</h3>
             </i>
             <p>This upcoming summer I'm excited to have the opportunity to be working for Apple in San Diego for Apple
                 Music! I'm looking forward to doing some cool mobile app development!</p>
-            <iframe src="http://www.apple.com/" title="Club Website #1"></iframe>
+            <picture>
+                <source media="(min-width: 36em)" srcset="redpanda/redpanda.png 1024w,
+                          redpanda/redpandamed.png 640w,
+                          redpanda/redpandasmall.png  320w" sizes="33.3vw" />
+                <source srcset="redpandalargecrop.png 2x,
+                          redpanda/redpandasmallcrop.png 1x" />
+                <img src="redpanda/redpanda.png" alt="Red Panda San Diego Zoo" height="300px" width="500px" />
+            </picture>
             <i>
                 <h2>Munich Re </h2>
                 <h3>Software Engineering Intern</h3>
             </i>
             <p>Last summer I worked as a DevOps Intern at Munich Reinsurance Company in Princeton, New Jersey. I worked
                 a lot with Python, CI/CD Pipelines, Unit Testing, and Azure DevOps!</p>
-            <iframe src="https://www.munichre.com/en.html" title="Club Website #1"></iframe>
+            <picture>
+                <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+                <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+                <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+            </picture>
         </section>
 
 
