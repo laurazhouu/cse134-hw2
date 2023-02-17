@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura's Personal Portfolio</title>
     <link rel="icon" href="sakura.png">
     <link rel="stylesheet" href="work.css">
@@ -36,8 +37,14 @@
                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.</p>
             </div>
-            <iframe src="https://sandiegozoowildlifealliance.org/" title="San Diego Zooseeker" id="work-img1"></iframe>
-
+            <picture>
+                <source media="(min-width: 36em)" srcset="redpanda/redpanda.png 1024w,
+                          redpanda/redpandamed.png 640w,
+                          redpanda/redpandasmall.png  320w" sizes="33.3vw" />
+                <source srcset="redpandalargecrop.png 2x,
+                          redpanda/redpandasmallcrop.png 1x" />
+                <img src="redpanda/redpanda.png" alt="Red Panda San Diego Zoo" id="work-img1" />
+            </picture>
             <div id="work-item2">
                 <h2>CSE134 Personal Portfolio</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
