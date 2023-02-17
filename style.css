@@ -80,13 +80,13 @@ nav {
 }
 
 nav div a {
-    margin: 0 1vw;
+    padding: 1vw 1vw;
     transition: 0.2s;
+    /* equal to border width */
 }
 
 nav div a:hover {
-    font-size: 1.05rem;
-    /* transform: scale(1.1); */
+    transform: translate(0, -1vw);
     cursor: pointer;
     text-shadow: 0px 0px 5px white;
 }
